@@ -10,7 +10,7 @@ Public Class Form1
 
     Private Sub btnCreate_Click(sender As Object, e As EventArgs) Handles btnCreate.Click
         Try
-            Using conn As New MySqlConnection(DatabaseConnection.connString)
+            Using conn As New MySqlConnection(connString)
                 conn.Open()
                 Dim query As String = "INSERT INTO employees (name, position, salary, department) VALUES (@name, @position, @salary, @department)"
                 Dim cmd As New MySqlCommand(query, conn)
@@ -52,7 +52,7 @@ Public Class Form1
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
         Try
-            Using conn As New MySqlConnection(DatabaseConnection.connString)
+            Using conn As New MySqlConnection(connString)
                 conn.Open()
                 Dim query As String = "UPDATE employees SET name=@name, position=@position, salary=@salary, department=@department WHERE emp_id=@id"
                 Dim cmd As New MySqlCommand(query, conn)
@@ -75,7 +75,7 @@ Public Class Form1
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         Try
-            Using conn As New MySqlConnection(DatabaseConnection.connString)
+            Using conn As New MySqlConnection(connString)
                 conn.Open()
                 Dim query As String = "DELETE FROM employees WHERE emp_id=@id"
                 Dim cmd As New MySqlCommand(query, conn)

@@ -104,9 +104,9 @@ Partial Class Form1
         '
         'txtID
         '
+        Me.txtID.BackColor = System.Drawing.SystemColors.Control
         Me.txtID.Location = New System.Drawing.Point(183, 90)
         Me.txtID.Name = "txtID"
-        Me.txtID.ReadOnly = True
         Me.txtID.Size = New System.Drawing.Size(240, 20)
         Me.txtID.TabIndex = 6
         '
@@ -114,7 +114,6 @@ Partial Class Form1
         '
         Me.txtName.Location = New System.Drawing.Point(183, 133)
         Me.txtName.Name = "txtName"
-        Me.txtName.ReadOnly = True
         Me.txtName.Size = New System.Drawing.Size(240, 20)
         Me.txtName.TabIndex = 7
         '
@@ -122,7 +121,6 @@ Partial Class Form1
         '
         Me.txtPosition.Location = New System.Drawing.Point(183, 173)
         Me.txtPosition.Name = "txtPosition"
-        Me.txtPosition.ReadOnly = True
         Me.txtPosition.Size = New System.Drawing.Size(240, 20)
         Me.txtPosition.TabIndex = 8
         '
@@ -130,7 +128,6 @@ Partial Class Form1
         '
         Me.txtSalary.Location = New System.Drawing.Point(183, 212)
         Me.txtSalary.Name = "txtSalary"
-        Me.txtSalary.ReadOnly = True
         Me.txtSalary.Size = New System.Drawing.Size(240, 20)
         Me.txtSalary.TabIndex = 9
         '
@@ -138,7 +135,6 @@ Partial Class Form1
         '
         Me.txtDepartment.Location = New System.Drawing.Point(183, 247)
         Me.txtDepartment.Name = "txtDepartment"
-        Me.txtDepartment.ReadOnly = True
         Me.txtDepartment.Size = New System.Drawing.Size(240, 20)
         Me.txtDepartment.TabIndex = 10
         '
