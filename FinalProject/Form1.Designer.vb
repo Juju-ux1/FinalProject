@@ -44,27 +44,31 @@ Partial Class Form1
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Button1.Font = New System.Drawing.Font("Palatino Linotype", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(44, 27)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(466, 40)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "EMPLOYEE RECORDS SYSTEM"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'lblID
         '
         Me.lblID.AutoSize = True
+        Me.lblID.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.lblID.Font = New System.Drawing.Font("NSimSun", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblID.Location = New System.Drawing.Point(41, 91)
+        Me.lblID.Location = New System.Drawing.Point(41, 95)
         Me.lblID.Name = "lblID"
         Me.lblID.Size = New System.Drawing.Size(103, 15)
         Me.lblID.TabIndex = 1
         Me.lblID.Text = "Employee ID:"
+        Me.lblID.Visible = False
         '
         'lblName
         '
         Me.lblName.AutoSize = True
+        Me.lblName.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.lblName.Font = New System.Drawing.Font("NSimSun", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblName.Location = New System.Drawing.Point(41, 133)
         Me.lblName.Name = "lblName"
@@ -75,6 +79,7 @@ Partial Class Form1
         'lblPosition
         '
         Me.lblPosition.AutoSize = True
+        Me.lblPosition.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.lblPosition.Font = New System.Drawing.Font("NSimSun", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPosition.Location = New System.Drawing.Point(41, 173)
         Me.lblPosition.Name = "lblPosition"
@@ -85,6 +90,7 @@ Partial Class Form1
         'lblSalary
         '
         Me.lblSalary.AutoSize = True
+        Me.lblSalary.BackColor = System.Drawing.Color.Silver
         Me.lblSalary.Font = New System.Drawing.Font("NSimSun", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSalary.Location = New System.Drawing.Point(41, 212)
         Me.lblSalary.Name = "lblSalary"
@@ -95,6 +101,7 @@ Partial Class Form1
         'lblDept
         '
         Me.lblDept.AutoSize = True
+        Me.lblDept.BackColor = System.Drawing.Color.Silver
         Me.lblDept.Font = New System.Drawing.Font("NSimSun", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDept.Location = New System.Drawing.Point(41, 247)
         Me.lblDept.Name = "lblDept"
@@ -104,14 +111,16 @@ Partial Class Form1
         '
         'txtID
         '
-        Me.txtID.BackColor = System.Drawing.SystemColors.Control
+        Me.txtID.BackColor = System.Drawing.SystemColors.Menu
         Me.txtID.Location = New System.Drawing.Point(183, 90)
         Me.txtID.Name = "txtID"
         Me.txtID.Size = New System.Drawing.Size(240, 20)
         Me.txtID.TabIndex = 6
+        Me.txtID.Visible = False
         '
         'txtName
         '
+        Me.txtName.BackColor = System.Drawing.SystemColors.Menu
         Me.txtName.Location = New System.Drawing.Point(183, 133)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(240, 20)
@@ -119,6 +128,7 @@ Partial Class Form1
         '
         'txtPosition
         '
+        Me.txtPosition.BackColor = System.Drawing.SystemColors.Menu
         Me.txtPosition.Location = New System.Drawing.Point(183, 173)
         Me.txtPosition.Name = "txtPosition"
         Me.txtPosition.Size = New System.Drawing.Size(240, 20)
@@ -126,6 +136,7 @@ Partial Class Form1
         '
         'txtSalary
         '
+        Me.txtSalary.BackColor = System.Drawing.SystemColors.Menu
         Me.txtSalary.Location = New System.Drawing.Point(183, 212)
         Me.txtSalary.Name = "txtSalary"
         Me.txtSalary.Size = New System.Drawing.Size(240, 20)
@@ -133,6 +144,7 @@ Partial Class Form1
         '
         'txtDepartment
         '
+        Me.txtDepartment.BackColor = System.Drawing.SystemColors.Menu
         Me.txtDepartment.Location = New System.Drawing.Point(183, 247)
         Me.txtDepartment.Name = "txtDepartment"
         Me.txtDepartment.Size = New System.Drawing.Size(240, 20)
@@ -196,6 +208,7 @@ Partial Class Form1
         'dgvEmployees
         '
         Me.dgvEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvEmployees.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgvEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvEmployees.Location = New System.Drawing.Point(12, 346)
         Me.dgvEmployees.Name = "dgvEmployees"
@@ -208,6 +221,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.FinalProject.My.Resources.Resources.Fundo_de_escritório_desfocado_escritório_desfocado_para_fundo_de_apresentação___imagem_Premium_gerada_com_IA
         Me.ClientSize = New System.Drawing.Size(580, 606)
         Me.Controls.Add(Me.dgvEmployees)
         Me.Controls.Add(Me.btnClear)
